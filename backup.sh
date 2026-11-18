@@ -20,6 +20,6 @@ python3 "$BACKUP_DIR/split_csv.py" "$EXPORT_DIR/$EXPORT_FILE" "$EXPORT_DIR"
 cd $BACKUP_DIR
 
 # 4. Commit and push to your remote Git server (GitHub, Gitea, etc.)
-#git add *
-#git commit -m "Automated backup: $(date +'%Y-%m-%d %H:%M:%S')"
-#git push origin main
+git add *
+git commit -m "Automated backup: $(date +'%Y-%m-%d %H:%M:%S')"
+git push origin main
